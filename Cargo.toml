@@ -1,0 +1,32 @@
+# origin: https://github.com/cynecx/async-watch/blob/master/src/lib.rs
+
+[package]
+name = "just-watch"
+authors = [
+    # A MIT-licensed original implementation from `tokio` crate:
+    # Repository: https://github.com/tokio-rs/tokio
+    # Module: `tokio::sync::watch`
+    # License: https://github.com/tokio-rs/tokio/blob/master/tokio/LICENSE
+    "Carl Lerche <me@carllerche.com>",
+    # A MIT-licensed improved implementation from `async_watch` crate:
+    # Repository: https://github.com/cynecx/async-watch
+    # License: https://github.com/cynecx/async-watch/blob/master/LICENSE-MIT
+    "cynecx <me@cynecx.net>",
+    # The final implementation adapted to 2021 Edition and the way crates suite.
+    "Denis Kolodin <deniskolodin@gmail.com>",
+]
+version = "0.2.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/knwldev/just-watch"
+homepage = "https://knowledge.dev"
+description = "Async watch channel"
+keywords = ["async", "asynchronous", "channel", "synchronization"]
+categories = ["asynchronous", "concurrency"]
+readme = "README.md"
+
+[dependencies]
+event-listener = "2.5.3"
+
+[dev-dependencies]
+async-executor = "1.5.1"
